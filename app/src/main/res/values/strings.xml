@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PictureViewer</string>
+    <string name="title">Просмотр картинок</string>
+    <string name="image_description">Учебная картинка: горы и солнце</string>
+    <string name="button_resource">Из ресурсов</string>
+    <string name="button_internet">Из интернета (вручную)</string>
+    <string name="button_glide">Из интернета (Glide)</string>
+    <string name="hint_url">Адрес картинки (https://…)</string>
+    <string name="default_url" translatable="false">https://picsum.photos/600/400</string>
+    <string name="status_ready">Показана картинка из ресурсов</string>
+    <string name="status_loading">Загрузка…</string>
+    <string name="status_done">Картинка загружена</string>
+    <string name="status_error">Не удалось загрузить картинку</string>
+    <string name="status_glide">Запрос отправлен через Glide</string>
+    <string name="error_empty_url">Введите адрес картинки</string>
+    <string name="button_camera">Сфотографировать (основная камера)</string>
+    <string name="button_selfie">Селфи (фронтальная камера)</string>
+    <string name="status_photo_done">Фотография сделана</string>
+    <string name="status_photo_cancel">Съёмка отменена</string>
+    <string name="error_no_camera">На устройстве нет приложения камеры</string>
+</resources>

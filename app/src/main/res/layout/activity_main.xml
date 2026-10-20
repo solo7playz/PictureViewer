@@ -1,0 +1,13 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".MainActivity">
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/title" android:textSize="24sp" android:textStyle="bold"/>
+        <ImageView android:id="@+id/imageView" android:layout_width="match_parent" android:layout_height="240dp" android:layout_marginTop="16dp" android:background="#EEEEEE" android:contentDescription="@string/image_description" android:scaleType="centerCrop"/>
+        <Button android:id="@+id/buttonResource" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/button_resource"/>
+        <EditText android:id="@+id/editTextUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:hint="@string/hint_url" android:importantForAutofill="no" android:inputType="textUri" android:text="@string/default_url"/>
+        <Button android:id="@+id/buttonInternet" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/button_internet"/>
+        <Button android:id="@+id/buttonGlide" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/button_glide"/>
+        <Button android:id="@+id/buttonCamera" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/button_camera"/>
+        <Button android:id="@+id/buttonSelfie" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/button_selfie"/>
+        <TextView android:id="@+id/textViewStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/status_ready" android:textSize="16sp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
