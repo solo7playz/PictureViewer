@@ -137,12 +137,14 @@ class MainActivity : AppCompatActivity() {
         photoFile = file
         val uri = FileProvider.getUriForFile(this, "$packageName.fileprovider", file)
 
-        val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-        intent.putExtra(MediaStore.EXTRA_OUTPUT, uri)
-        if (front) {
-            intent.putExtra("android.intent.extras.CAMERA_FACING", 1)
-            intent.putExtra("android.intent.extras.LENS_FACING_FRONT", 1)
-            intent.putExtra("android.intent.extra.USE_FRONT_CAMERA", true)
+        val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE).apply {
+            putExtra(MediaStore.EXTRA_OUTPUT, uri)
+            addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION)
+            if (front) {
+                putExtra("android.intent.extras.CAMERA_FACING", 1)
+                putExtra("android.intent.extras.LENS_FACING_FRONT", 1)
+                putExtra("android.intent.extra.USE_FRONT_CAMERA", true)
+            }
         }
 
         try {
